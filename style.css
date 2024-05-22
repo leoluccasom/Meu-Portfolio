@@ -232,4 +232,92 @@ section {
 .habilidades img {
   width: 85px;
   padding: 20px;
+}
+
+.projetos {
+  height: 120vh;
+}
+.projetos button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 28px;
+  width: 125px;
+  background-color: white;
+  color: black;
+  cursor: not-allowed;
+}
+.projetos h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+.projetos .fotos-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.projetos p {
+  text-align: left;
+  font-size: 16px;
+  padding: 12px;
+}
+.projetos img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+#box-one {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+#box-two {
+  background-color: #30152D;
+  border-radius: 10px;
+  color: white;
+}
+
+#box-three {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.contato {
+  height: 50vh;
+}
+.contato h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.contato a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.contato a:hover {
+  text-decoration: underline;
+}
+.contato p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contato div {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
