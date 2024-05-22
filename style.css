@@ -300,6 +300,7 @@ section {
   margin-bottom: 40px;
 }
 .contato a {
+  padding-left: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -311,13 +312,9 @@ section {
   text-decoration: underline;
 }
 .contato p {
+  padding-left: 10px;
   font-size: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.contato div {
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
