@@ -269,8 +269,10 @@ section {
   padding: 12px;
 }
 .projetos img {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px;
   width: 100%;
+  transform-origin: center;
+  animation: beat 1.5s infinite alternate;
 }
 
 #box-one {
@@ -291,6 +293,11 @@ section {
   color: black;
 }
 
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
 .contato {
   height: 50vh;
 }
@@ -317,4 +324,35 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .conteudo p {
+    width: 50%;
+  }
+  .habilidades img {
+    margin-top: 50px;
+  }
+  .projetos {
+    height: 80vh;
+  }
+  .projetos .fotos-projetos {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contato .links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .contato .links a {
+    display: flex;
+    margin-left: 40%;
+  }
+  .contato .links p {
+    margin-left: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */

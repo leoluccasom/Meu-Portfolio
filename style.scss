@@ -292,14 +292,16 @@ section {
     padding: 12px;
   }
   img{
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px ;
     width: 100%;
+    transform-origin: center;
+    animation: beat 1.5s infinite alternate;
   }
 }
 #box-one{
   background-color: black;
   border-radius: 10px;
-  color: white;
+  color: white; 
 }
 #box-two{
   background-color: #30152D;
@@ -310,6 +312,11 @@ section {
   background-color: white;
   border-radius: 10px;
   color: black;
+}
+@keyframes beat{
+  to{
+    transform: scale(1.1);
+  }
 }
 
 .contato{
@@ -339,3 +346,41 @@ section {
     gap: 10px;
   }
 }
+
+@media (min-width:700px){
+  .menu{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .conteudo{
+    p{
+      width: 50%;
+    }
+  }
+  .habilidades{
+    img{
+      margin-top: 50px;
+    }
+  }
+  .projetos{
+    height: 80vh;
+    .fotos-projetos{
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .contato{
+    .links{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      a{
+        display: flex;
+        margin-left: 40% ;
+      }
+      p{
+        margin-left: 20%;
+      }
+    }
+  }
+}
+
