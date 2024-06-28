@@ -22,15 +22,13 @@ body{
   box-shadow: 10px 0px 13px $color-one;
 }
 
-section {
-    height: 100vh;
-}
 
 .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     h1{
       font-family: "Poppins", sans-serif;
       font-weight: 700;
@@ -132,6 +130,7 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     h1{
       color: $color-one;
         margin-bottom: 20px;
@@ -308,11 +307,7 @@ section {
   }
 }
 .projetos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 180vh;
+  margin: 30px 0px;
   button{
     display: flex;
     justify-content: center;
@@ -333,13 +328,14 @@ section {
     font-size: 32px;
   }
   .fotos-projetos{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    text-align: center;
-    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    width: 80%;
     margin: 0 auto;
-  }
+}
   p{
     line-height: 22px;
     text-align: left;
@@ -347,9 +343,8 @@ section {
     padding: 12px;
   }
   img{
-    border-radius: 10px 10px ;
     width: 100%;
-    transform-origin: center;
+    border-radius: 10px;
     animation: beat 1.5s infinite alternate;
   }
 }
@@ -368,6 +363,30 @@ section {
   border-radius: 10px;
   color: black;
 }
+#box-four{
+  background-color: #080808;
+  border-radius: 10px;
+  color: white;
+}
+#box-five{
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+}
+#box-five p{
+  padding: 0px;
+  margin-left: 10px;
+}
+#box-six{
+  height: 100%;
+  background-color: #000000;
+  border-radius: 10px;
+  color: white;
+  p{
+    padding: 10px;
+  }
+}
+
 @keyframes beat{
   to{
     transform: scale(1.1);
@@ -408,7 +427,7 @@ section {
   }
 }
 
-@media (min-width:700px){
+@media (min-width:668px){
   .menu{
     flex-direction: row;
     justify-content: space-around;
@@ -428,10 +447,9 @@ section {
     }
   }
   .projetos{
-    height: 80vh;
+  
     .fotos-projetos{
-      flex-direction: row;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   .contato{
@@ -442,6 +460,15 @@ section {
       a{
         display: flex;
       }
+    }
+  }
+}
+
+@media (min-width:1024px){
+  .projetos{
+  
+    .fotos-projetos{
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
